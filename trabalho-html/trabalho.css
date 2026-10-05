@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #333;
+}
+
+header {
+    background-color: #d63384;
+    padding: 20px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6e8;
+}
+
+.inicio {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #d63384,
+        #f783ac
+    );
+
+    color: white;
+}
+
+.texto-inicio {
+    max-width: 650px;
+}
+
+.texto-inicio h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.texto-inicio p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.imagem-inicio {
+    font-size: 170px;
+}
+
+.botao {
+    display: inline-block;
+
+    background-color: white;
+    color: #d63384;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.botao-pequeno {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    background-color: #d63384;
+    color: white;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+.sobre,
+.servicos,
+.beneficios {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.sobre h2,
+.servicos h2,
+.beneficios h2,
+.contato h2 {
+    color: #d63384;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.banner {
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background-color: #d63384;
+
+    color: white;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.depoimentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.depoimento {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento p {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.depoimento strong {
+    color: #d63384;
+}
+
+.contato {
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background-color: #ffe5f0;
+}
+
+.contato > p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 550px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: left;
+}
+
+form label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #d63384;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b02a6f;
+}
+
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.redes {
+    margin: 25px 0;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.redes a:hover {
+    color: #f783ac;
+}
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-inicio h1 {
+        font-size: 38px;
+    }
+
+    .imagem-inicio {
+        font-size: 100px;
+        margin-top: 40px;
+    }
+
+    .cards,
+    .depoimentos {
+        grid-template-columns: 1fr;
+    }
+}
